@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+    <div id="center-on-page">
+        <div class="pagetitle">
+            <h1>What's in your fridge?</h1>
+        </div>
+        <div id="main">
+            <form method="post" autocomplete="off" action="{{ url_for('submitted_fridge') }}">
+                <input type="text" name="Ingredient1"><br />
+                <input type="text" name="Ingredient2"><br />
+                <input type="text" name="Ingredient3"><br />
+                <input type="submit">
+            </form>
+        </div>
+        <div>
+            <form method="get" action="{{ url_for('new_recipe')}}">
+                <input type="submit" value="New Recipe">
+            </form>
+        </div>
+</body>
+
+</html>

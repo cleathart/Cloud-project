@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submitted form</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+    <div id="center-on-page">
+        <div class="pagetitle">
+            <h1>Possible Recipes</h1>
+        </div>
+        <div id="main">
+            <p>
+                <ul id="recipe_list">
+                    {% for recip in recipes %}
+                    <a href="{{'recipe/'+recip['url']}}">
+                        <li>{{recip['recipe_name']}}</li>
+                    </a>
+                    {% endfor %}
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

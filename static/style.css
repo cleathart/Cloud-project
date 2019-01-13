@@ -1,0 +1,73 @@
+body {
+    color: rgb(250, 243, 210);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: currentColor;
+}
+
+#center-on-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(65, 64, 64);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(65, 64, 64);
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    color: rgb(65, 64, 64);
+    text-decoration: inherit
+}
+
+label {
+    text-align: center;
+    color: rgb(65, 64, 64);
+}
+
+input[type=text] {
+    border: none;
+    background-color: #FFFFF1;
+    padding: 12px 10px;
+    height: 10%;
+    width: 60%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 40%;
+    margin-top: 10px;
+}
+
+textarea {
+    border: none;
+    background-color: #FFFFF1;
+    padding: 12px 10px;
+    height: 300px;
+    width: 60%;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.method_elem {
+    text-align: left;
+    list-style-type: decimal
+}
+
+#recipe_list {
+    text-decoration: none
+}
